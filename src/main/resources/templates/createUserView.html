@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/layout.html :: html_head"/>
+<body>
+	
+	<!--<div th:replace="fragments/layout.html :: header"/>-->
+	<div th:replace="fragments/layout.html :: menu"/>
+
+	<h1>Join to the Clan!!</h1>
+	<form action="#" th:action="@{/create}" method="post">
+		<fieldset>
+			<input type="hidden">
+		</fieldset>
+		<fieldset>
+			First Name <input type="text">
+			<!--<p th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></p>-->
+		</fieldset>
+		<fieldset>
+			Second Name <input type="text">
+			<!--<p th:if="${#fields.hasErrors('secondName')}"
+				th:errors="*{secondName}"></p>-->
+		</fieldset>
+		<fieldset>
+			Last Name <input type="text">
+			<!--<p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></p>-->
+		</fieldset>
+
+		<fieldset>
+			User Name <input type="text">
+			<!--<p th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></p>-->
+		</fieldset>
+		<fieldset>
+			Password <input type="password">
+			<!--<p th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></p>-->
+		</fieldset>
+
+		<fieldset>
+			<input type="submit" value="Save" /> &nbsp; &nbsp; <input
+				type="reset" value="Reset" />
+		</fieldset>
+
+	</form>
+	<br />
+	<!--<div th:replace="fragments/general.html :: footer"></div>-->
+</body>
+</html>

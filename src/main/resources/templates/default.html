@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/layout.html :: html_head"/>
+<body>
+	<div th:replace="fragments/layout.html :: menu"/>
+	<div th:replace="fragments/layout.html :: header"/>
+	
+	<h1>Recycle and save the earth</h1>
+		<form action ="#" th:action="@{/default}" method="post">
+		<table class="framed">
+			
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+					<button class="button button1"><a th:href="@{/login}">Welcome Back! Log In as a recycler</a></button>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				
+				<td>
+					<button class="button button2"><a th:href="@{/create}">Join to Recycling clan</a></button>
+					
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+
+</html>

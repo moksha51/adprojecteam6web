@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/layout.html :: html_head"/>
+<body>
+    <div th:replace="fragments/layout.html :: menu"/>
+    <div th:replace="fragments/layout.html :: header"/>
+
+    <h1>Classify your Waste with this Trashify</h1>
+        <form action ="#" th:action="@{/trashify}" method="post">
+    <p> Here to accept Photos upload
+    </p>
+    <div style="text-align:center">
+    <div class="file-uploader">
+
+            <!-- only accepts images for uploading -->
+            <input type="file" name="myfile" accept="image/*">
+            <input type="submit">
+
+    </div>
+
+    </div>
+
+
+    </form>
+
+</body>
+
+</html>
